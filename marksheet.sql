@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 10, 2025 at 01:41 PM
+-- Generation Time: Jun 10, 2025 at 03:51 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -30,7 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `results` (
   `fname` varchar(50) DEFAULT NULL,
   `lname` varchar(50) DEFAULT NULL,
-  `enrollment` int(20) DEFAULT NULL,
+  `enrollment` varchar(20) DEFAULT NULL,
   `division` varchar(10) DEFAULT NULL,
   `semester` int(10) DEFAULT NULL,
   `ds` double DEFAULT NULL,
@@ -45,8 +45,8 @@ CREATE TABLE `results` (
 --
 
 INSERT INTO `results` (`fname`, `lname`, `enrollment`, `division`, `semester`, `ds`, `laravel`, `c_language`, `java`, `python`) VALUES
-('het', 'd', 2147483647, 'a', 3, 20, 60, 66, 77, 88),
-('m', 'm', 2147483647, 'A', 5, 44, 77, 55, 66, 99);
+('Het', 'D', '12345678901276', 'A', 5, 87, 65, 43, 78, 66),
+('m', 'm', '12354364586755', 'C', 6, 77, 65, 34, 87, 98);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
