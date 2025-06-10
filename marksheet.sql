@@ -46,9 +46,6 @@ CREATE TABLE `results` (
 
 INSERT INTO `results` (`fname`, `lname`, `enrollment`, `division`, `semester`, `ds`, `laravel`, `c_language`, `java`, `python`) VALUES
 ('het', 'd', 2147483647, 'a', 3, 20, 60, 66, 77, 88),
-('Umag', 'm', 2147483647, 'B', 5, 33, 55, 77, 99, 20),
-('a', 'b', 2147483647, 'F', 4, 66, 55, 44, 77, 44),
-('amit', 's', 2147483647, 'C', 3, 22, 33, 44, 55, 66),
 ('m', 'm', 2147483647, 'A', 5, 44, 77, 55, 66, 99);
 COMMIT;
 
