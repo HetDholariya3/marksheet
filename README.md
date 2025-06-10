@@ -1,4 +1,4 @@
-# 🎓 Student Marksheet Management System
+#Student Marksheet Management System
 
 This project is a GUI-based Python application using Tkinter and MySQL to manage student marksheets.
 
