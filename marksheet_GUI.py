@@ -116,6 +116,8 @@ def insert():
         my_db.commit()
         messagebox.showinfo("Success", "Record inserted successfully!")
         
+        
+        
     except InvalidEnrollmentError as e:
         messagebox.showerror("Invalid Enrollment", str(e))
     except InvalidMarkError as e:
@@ -124,7 +126,19 @@ def insert():
         messagebox.showerror("Invalid Semester", str(e))
     except Exception as e:
         messagebox.showerror("Error", f"An unexpected error occurred: {str(e)}")
-
+        
+    # Clear input fields
+    e1.delete(0, tk.END)
+    e2.delete(0, tk.END)
+    enroll_entry.delete(0, tk.END)
+    div_entry.delete(0, tk.END)
+    sem_entry.delete(0, tk.END)
+    m1.delete(0, tk.END)
+    m2.delete(0, tk.END)
+    m3.delete(0, tk.END)
+    m4.delete(0, tk.END)
+    m5.delete(0, tk.END)
+    
 def show():
     try:
         mycursor.execute("SELECT * FROM results")
@@ -255,15 +269,15 @@ def show_result():
                 )
             else:
                 result_label.config(
-                    text=f"Name: {full_name}\nEnrollment No: {enroll_entry.get()}\nDivision: {division}\nSemester: {semester}\n\n"
-                        f"DS Marks: {mark1} | {pass_fail_1}\n"
-                        f"Laravel Marks: {mark2} | {pass_fail_2}\n"
-                        f"C Language Marks: {mark3} | {pass_fail_3}\n"
-                        f"Java Marks: {mark4} | {pass_fail_4}\n"
-                        f"Python Marks: {mark5} | {pass_fail_5}\n\n"
-                        f"Total Marks: {total_marks}\n"
-                        f"Percentage: {percentage:.2f}%\n"
-                        f"Overall Result: {overall_result}",
+                    text=f"Name: {full_name}\nEnrollment No: {enrollment_no}\nDivision: {division}\nSemester: {semester}\n\n"
+                    f"DS Marks: {mark1} | {pass_fail_1}\n"
+                    f"Laravel Marks: {mark2} | {pass_fail_2}\n"
+                    f"C Language Marks: {mark3} | {pass_fail_3}\n"
+                    f"Java Marks: {mark4} | {pass_fail_4}\n"
+                    f"Python Marks: {mark5} | {pass_fail_5}\n\n"
+                    f"Total Marks: {total_marks}\n"
+                    f"Percentage: {percentage:.2f}%\n"
+                    f"Overall Result: {overall_result}",
                     fg="green"
                 )
         else:
