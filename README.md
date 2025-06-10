@@ -2,27 +2,20 @@
 
 A desktop GUI application built with Python (Tkinter) and MySQL to manage student records, including subject-wise marks, and generate result summaries with pass/fail status and percentage.
 
-## 🚀 Features
+# 🎓 Student Marksheet Management System
 
-- ✅ Add new student records with validation
-- ✏️ Update existing records by student name
-- ❌ Delete student records
-- 📋 Show all stored records
-- 📊 Generate result (Pass/Fail + Percentage)
-- 🔐 Validates:
-  - Enrollment number (14-digit)
-  - Semester (1 to 6)
-  - Marks range (0-100)
+This project is a GUI-based Python application using Tkinter and MySQL to manage student marksheets.
 
-## 🛠️ Tech Stack
+## Features
+- Add student records
+- Update and delete existing records
+- Show all student data
+- Display result with pass/fail status and percentage
 
-- **Frontend**: Python with Tkinter
-- **Backend**: MySQL
-- **Connector**: `mysql-connector-python`
-
----
-
-## 🗃️ Database Setup
+## Technologies Used
+- Python (Tkinter)
+- MySQL
+- MySQL Connector
 
 1. **Create MySQL Database** (or import directly):
     - Create a database called `marksheet`
