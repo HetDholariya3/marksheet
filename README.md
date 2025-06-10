@@ -25,7 +25,7 @@ USE marksheet;
 CREATE TABLE results (
     fname VARCHAR(50),
     lname VARCHAR(50),
-    enrollment BIGINT,
+    enrollment VARCHAR(20),
     division VARCHAR(10),
     semester INT,
     ds FLOAT,
