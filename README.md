@@ -1,9 +1,5 @@
 # 🎓 Student Marksheet Management System
 
-A desktop GUI application built with Python (Tkinter) and MySQL to manage student records, including subject-wise marks, and generate result summaries with pass/fail status and percentage.
-
-# 🎓 Student Marksheet Management System
-
 This project is a GUI-based Python application using Tkinter and MySQL to manage student marksheets.
 
 ## Features
